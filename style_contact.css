@@ -1,0 +1,110 @@
+body{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+nav{
+    background-color: #fff;
+}
+
+#navbarNav{
+    font-weight: bold;
+}
+#navbarNav li{
+    padding-left: 50px;
+}
+.navbar-brand{
+    font-family: courier;
+    font-size: 30px;
+}
+
+.bg-image {
+    background-image: url("./images/contact.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 88vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    text-align: center;
+  }
+
+header{
+    margin-bottom: 50px;
+}
+
+h1{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+/*https://www.w3docs.com/snippets/css/how-to-give-a-glass-background-effect-to-the-text.html*/
+
+#glassy-text {
+ 
+    font-family: courier;
+    font-size: large;
+    text-align: center;
+    padding: 20px 40px;
+  }
+  
+  @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+    #glassy-text {
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
+      background-color: rgba(255, 255, 255, 0.5);
+    }
+  }
+
+  .bio{
+    display: flex;
+    font-size: 30px;
+    margin-bottom: 50px;
+  }
+
+.bio img{
+    height: 300px;
+    width: auto;
+    margin-right: 50px;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #ddc80a;
+  color: rgb(0, 0, 0);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #e08cac;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+@media only screen and (max-width: 767px) {
+    nav ul {
+        justify-content: center;
+        align-items: center;
+    }
+}

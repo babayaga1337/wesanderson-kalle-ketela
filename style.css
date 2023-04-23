@@ -1,0 +1,71 @@
+body{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+nav{
+    background-color: #fff;
+}
+
+#navbarNav{
+    font-weight: bold;
+}
+#navbarNav li{
+    padding-left: 50px;
+}
+.navbar-brand{
+    font-family: courier;
+    font-size: 30px;
+}
+
+.bg-image {
+    background-image: url("./images/grandbudpest.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 88vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    text-align: center;
+  }
+
+header{
+    margin-bottom: 50px;
+}
+
+h1{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+/*https://www.w3docs.com/snippets/css/how-to-give-a-glass-background-effect-to-the-text.html*/
+
+#glassy-text {
+ 
+    font-family: courier;
+    font-size: large;
+    text-align: center;
+    padding: 20px 40px;
+  }
+  
+  @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+    #glassy-text {
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
+      background-color: rgba(255, 255, 255, 0.5);
+    }
+  }
+
+footer{
+    height: 200px;
+    background-color: black;
+}
+
+@media only screen and (max-width: 767px) {
+    nav ul {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
